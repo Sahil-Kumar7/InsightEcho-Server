@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 app.use(express.json({extended: true}))
 app.use(express.urlencoded({extended: true}))
-app.use(cors({credentials: true, origin: "https://insight-echo-client.vercel.app/"}))
+app.use(cors())
 app.use(upload());
 // app.use('/uploads', express.static(__dirname + '/uploads'))
 
